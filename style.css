@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'titulo' ;
+    src: url(pacote-d012/fonte/PassinOne/Lato/Lato-Black.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'paragrafo' ;
+    src: url(pacote-d012/fonte/Sriracha/Sriracha/Sriracha-Regular.ttf)format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fonte-t1:titulo;
+    --fontep:paragrafo;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+header{
+    background-color: black;
+    height: 200px;
+    padding: 10px;
+    margin: auto;
+}
+header > p{
+    color: white;
+    text-align: center;
+    padding: 5px
+    ;
+}
+a{
+    text-decoration: none;
+    transition-duration: .5s;
+    color: white;
+}
+ a:hover{
+    background-color: rgb(48, 45, 45);
+    color: white;
+    font-weight: bolder;
+}
+header > h1{
+    font-family: var(--fonte-t1),'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-top: 0;
+    font-size: 4em;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+p {
+    font-family: var(--fontep),Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 15px;
+
+}
+section{
+    padding: 30px;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    line-height: 50px;
+}
+section.padrao{
+    background-color: white;
+}
+section.img > p{
+    width: 400px;
+    background-color: rgba(97, 97, 97, 0.273);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+section.img{
+    background-color: rgb(38, 33, 33);
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section#imagem1 {
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    background-position: right center; 
+    background-size: cover;
+}
+
+section#imagem2 {
+    background-image: url(pacote-d012/imagens/background002.jpg);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
